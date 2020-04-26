@@ -4,11 +4,7 @@ import kotlin.test.assertEquals
 
 class Tests {
 
-    private val FactSrc = FactorialSource()
-    private var FiboSrc = FibonacciSource()
-    private var LargestCommonDivisorSrc = LargestCommonDivisorSource()
-
-    fun TestFactorialFunction () {
+    fun TestFactorialFunction (FactSrc: FactorialSource) {
 
         assertEquals(
                 1,
@@ -31,7 +27,7 @@ class Tests {
         )
     }
 
-    fun TestFibonacciFunction () {
+    fun TestFibonacciFunction (FiboSrc: FibonacciSource) {
 
         assertEquals(1,
                 FiboSrc.Fibonacci(2)
@@ -49,7 +45,7 @@ class Tests {
         )
     }
 
-    fun TestGetTheLargestCommonDivisorFunction () {
+    fun TestGetTheLargestCommonDivisorFunction (LargestCommonDivisorSrc: LargestCommonDivisorSource) {
 
         assertEquals(12,
                 LargestCommonDivisorSrc.GetTheLargestCommonDivisor(12, 36)
