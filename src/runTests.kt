@@ -1,14 +1,11 @@
-import org.Source.FactorialSource
-import org.Source.FibonacciSource
-import org.Source.LargestCommonDivisorSource
-import org.Source.Tests
+import org.Source.*;
 
 fun main () {
 
-    var FactSrc = FactorialSource()
-    var FiboSrc = FibonacciSource()
-    var LargestCommonDivisorSrc = LargestCommonDivisorSource()
-    var Runner = Tests()
+    val FactSrc = FactorialSource()
+    val FiboSrc = FibonacciSource()
+    val LargestCommonDivisorSrc = LargestCommonDivisorSource()
+    val Runner = Tests()
 
     Runner.TestFactorialFunction(FactSrc)
     Runner.TestFibonacciFunction(FiboSrc)
